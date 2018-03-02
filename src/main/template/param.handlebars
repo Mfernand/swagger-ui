@@ -1,0 +1,46 @@
+<td class='code'>
+	<label for='{{{escape valueId}}}'>{{{escape name}}}</label>
+	{{#if type}}<div class="paramType">{{{escape type}}}</div>{{/if}}
+	<div class="paramIn">({{{escape paramType}}})</div>
+</td>
+{{!-- <td>
+
+	{{#if isBody}}
+		{{#if isFile}}
+			<input type="file" name='{{{escape name}}}' id='{{{escape valueId}}}'/>
+			<div class="parameter-content-type" />
+		{{else}}
+			{{#if default}}
+				<div class="editor_holder"></div>
+				<textarea class='body-textarea' name='{{{escape name}}}' id='{{{escape valueId}}}'>{{{escape default}}}</textarea>
+        <br />
+        <div class="parameter-content-type" />
+			{{else}}
+				<textarea class='body-textarea' name='{{{escape name}}}' id='{{{escape valueId}}}'></textarea>
+				<div class="editor_holder"></div>
+				<br />
+				<div class="parameter-content-type" />
+			{{/if}}
+		{{/if}}
+	{{else}}
+		{{#if isFile}}
+			<input type="file" name='{{{escape name}}}' id='{{{escape valueId}}}'/>
+			<div class="parameter-content-type" />
+		{{else}}
+			{{#renderTextParam this}}
+			{{/renderTextParam}}
+		{{/if}}
+	{{/if}}
+
+</td> --}}
+{{!-- <td class="markdown">{{{sanitize description}}}</td>
+<td>{{{escape paramType}}}</td> --}}
+<td>
+	<div>{{{sanitize description}}}</div>
+	<span class="model-signature"></span>
+	{{#if isBody}}
+		<div class="parameter-content-type" />
+	{{else}}
+		{{!-- <div>{{#renderTextParam this}}{{/renderTextParam}}</div> --}}
+	{{/if}}
+</td>

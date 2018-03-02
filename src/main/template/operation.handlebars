@@ -1,0 +1,14 @@
+  <ul class='operations' >
+    <li class='{{{escape method}}} operation' id='{{{escape parentId}}}_{{{escape nickname}}}'>
+      <div class='heading'>
+        <h3>
+          <span class='http_method'>
+          <a href='#!/{{sanitize encodedParentId}}/{{sanitize nickname}}' class="toggleOperation">{{{escape method}}}</a>
+          </span>
+          <span class='path'>
+          <a href='#!/{{sanitize encodedParentId}}/{{sanitize nickname}}' title="{{{escape path}}}" class="toggleOperation {{#if deprecated}}deprecated{{/if}}">{{{escape path}}}</a>
+          </span>
+        </h3>
+      </div>
+    </li>
+  </ul>

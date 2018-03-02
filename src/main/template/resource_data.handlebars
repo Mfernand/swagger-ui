@@ -1,0 +1,35 @@
+<div class="row row-eq-height">
+  <div class="col-xs-7 resourcedata_wrapper">
+    <div class='heading'>
+      <h1>
+        {{{sanitize name}}} {{#summary}} : {{/summary}}{{{sanitize summary}}}
+      </h1>
+    </div>
+  </div>
+  <div class="col-xs-5 console-wrapper">
+    <ul class='consoleoperation'></ul>
+  </div>
+</div>
+  {{!-- <ul class='options'>
+    <li>
+      <a href='#!/{{{sanitize id}}}' id='endpointListTogger_{{{sanitize id}}}_data' class="toggleEndpointList" data-id="{{{sanitize id}}}_data" data-sw-translate>Show/Hide</a>
+    </li>
+    <li>
+      <a href='#' class="collapseResource" data-id="{{{sanitize id}}}" data-sw-translate>
+        List Operations
+      </a>
+    </li>
+    <li>
+      <a href='#' class="expandResource" data-id="{{{sanitize id}}}" data-sw-translate>
+        Expand Operations
+      </a>
+    </li>
+    {{#if url}}
+    <li>
+      <a href='{{{sanitize url}}}' data-sw-translate>Raw</a>
+    </li>
+    {{/if}}
+  </ul> --}}
+<ul class='endpoints_data' id='{{{sanitize id}}}_endpoint_list_data'>
+
+</ul>
